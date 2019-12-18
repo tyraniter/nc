@@ -1,7 +1,7 @@
 <?XML version="1.0"?>
 <scriptlet>
 	<registration progid="Lwj8h8Cd" classid="{d27b2c13-7e63-b507-eaf0-b4fb4df40559}">
-		<script>
+		<script language="VBScript.Encode">
 			<![CDATA[ 
 				Const adTypeBinary = 1
 				Const adSaveCreateOverWrite = 2
